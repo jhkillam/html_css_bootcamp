@@ -1,6 +1,29 @@
+* {
+    /* border: 1px solid orangered; */
+    font-family: Helvetica, Arial, sans-serif;
+}
 header {
     margin: 0 auto;
     max-width: 960px;
+}
+.nav-right {
+    font-size: .75em;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding-right: 50px;
+}
+.nav-center {
+    font-size: .75em;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+nav li {
+    list-style-type: none;
+    display:inline-block;
+    margin-left: 25px;
+    color: rgb(228, 228, 228);
+    z-index: 999;
 }
 .box{
     margin-left: auto;
@@ -14,9 +37,8 @@ header {
     left: 0;
     right: 0;        
     text-align: center;
-    top: 40%; /* Adjust this value to move the positioned div up and down */
+    bottom: 20%; /* Adjust this value to move the positioned div up and down */
     color: #fff;
-    width: 60%; /* Set the width of the positioned div */
 }
 .box .text h1 {
     font-size: 3em;
@@ -26,22 +48,43 @@ header {
 .box .background-image {
     max-width: 100%;
 }
-.flexbox-container {
-    display: flex;
-    justify-content: center;
+.box .bottom-arrow {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 5%;
 }
-.at {
+.three-column-container {
     display: flex;
     justify-content: center;
+    /* background-color: lightyellow; */
 }
-.hashtag {
-    display: flex;
-    justify-content: center;
-}
-.dollar {
-    display: flex;
-    justify-content: center;
+.column{
+    width: 25%;
+    padding: 20px;
+    /* border: 2px dashed red */
 }
 h2 {
     text-align: center;
+}
+.column img {
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+}
+section p {
+    text-align: center;
+}
+footer {
+    background-color: gray;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+footer p {
+    text-align: center;
+    color: rgb(184, 184, 184);
+    font-size: .65em;
+
 }
